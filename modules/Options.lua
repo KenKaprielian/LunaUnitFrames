@@ -2611,7 +2611,7 @@ function LunaUF:CreateOptionsMenu()
 		LunaOptionsFrame.pages[i].BuffPosDesc:SetText(L["Side"])
 
 		LunaOptionsFrame.pages[i].buffsizeslider = CreateFrame("Slider", "BuffSizeSlider"..LunaUF.unitList[i-1], LunaOptionsFrame.pages[i], "OptionsSliderTemplate")
-		LunaOptionsFrame.pages[i].buffsizeslider:SetMinMaxValues(10,50)
+		LunaOptionsFrame.pages[i].buffsizeslider:SetMinMaxValues(1,80)
 		LunaOptionsFrame.pages[i].buffsizeslider:SetValueStep(1)
 		LunaOptionsFrame.pages[i].buffsizeslider:SetScript("OnValueChanged", function()
 			local unit = this:GetParent().id
@@ -2627,7 +2627,7 @@ function LunaUF:CreateOptionsMenu()
 		LunaOptionsFrame.pages[i].buffsizeslider:SetWidth(120)
 
 		LunaOptionsFrame.pages[i].bigbuffsizeslider = CreateFrame("Slider", "BigBuffSizeSlider"..LunaUF.unitList[i-1], LunaOptionsFrame.pages[i], "OptionsSliderTemplate")
-		LunaOptionsFrame.pages[i].bigbuffsizeslider:SetMinMaxValues(0,20)
+		LunaOptionsFrame.pages[i].bigbuffsizeslider:SetMinMaxValues(1,80)
 		LunaOptionsFrame.pages[i].bigbuffsizeslider:SetValueStep(1)
 		LunaOptionsFrame.pages[i].bigbuffsizeslider:SetScript("OnValueChanged", function()
 			local unit = this:GetParent().id
@@ -2993,7 +2993,7 @@ function LunaUF:CreateOptionsMenu()
 			getglobal("Enable"..LunaUF.unitList[i-1].."AurasTimerText".."Text"):SetText(L["Enable Timer Text"])
 
 			LunaOptionsFrame.pages[i].auratimertextbigfontsizeslider = CreateFrame("Slider", "AuraTimerBigFontSlider"..LunaUF.unitList[i-1], LunaOptionsFrame.pages[i], "OptionsSliderTemplate")
-			LunaOptionsFrame.pages[i].auratimertextbigfontsizeslider:SetMinMaxValues(1,18)
+			LunaOptionsFrame.pages[i].auratimertextbigfontsizeslider:SetMinMaxValues(1,40)
 			LunaOptionsFrame.pages[i].auratimertextbigfontsizeslider:SetValueStep(1)
 			LunaOptionsFrame.pages[i].auratimertextbigfontsizeslider:SetScript("OnValueChanged", function()
 				local unit = this:GetParent().id
@@ -3009,7 +3009,7 @@ function LunaUF:CreateOptionsMenu()
 			LunaOptionsFrame.pages[i].auratimertextbigfontsizeslider:SetWidth(150)
 
 			LunaOptionsFrame.pages[i].auratimertextsmallfontsizeslider = CreateFrame("Slider", "AuraTimerSmallFontSlider"..LunaUF.unitList[i-1], LunaOptionsFrame.pages[i], "OptionsSliderTemplate")
-			LunaOptionsFrame.pages[i].auratimertextsmallfontsizeslider:SetMinMaxValues(1,18)
+			LunaOptionsFrame.pages[i].auratimertextsmallfontsizeslider:SetMinMaxValues(1,40)
 			LunaOptionsFrame.pages[i].auratimertextsmallfontsizeslider:SetValueStep(1)
 			LunaOptionsFrame.pages[i].auratimertextsmallfontsizeslider:SetScript("OnValueChanged", function()
 				local unit = this:GetParent().id
